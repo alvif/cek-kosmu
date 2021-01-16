@@ -13,4 +13,4 @@
 ```sh
 > npm run dev
 ```
-6. jalankan server api (Jika belum install, ini [link repo-nya.](https://github.com/alvif/cek-kosmu-server)
+6. jalankan server api (Jika belum install, ini [link repo-nya.](https://github.com/alvif/cek-kosmu-server))
