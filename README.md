@@ -1,4 +1,5 @@
 # cek-kosmu
+![Logo](https://github.com/alvif/cek-kosmu/blob/main/logo.png?raw=true)
 ### Project 4 Mata Kuliah Semester 3
 
 ### How to install
