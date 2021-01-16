@@ -1,0 +1,178 @@
+@font-face {
+    font-family: fontmoto;
+    src: url('../font/Articha.woff');
+}
+
+@font-face {
+    font-family: fontnavbar;
+    src: url('../font/Humnst777/Humanist777CondensedBT.ttf');
+}
+
+@font-face {
+    font-family: fontlabel;
+    src: url('../font/Futura/futura\ medium\ bt.ttf');
+}
+
+body {
+    background-image: url('../assets/bg.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    overflow: scroll;
+    line-height: 2em;
+}
+
+label {
+    font-family: fontlabel;
+    font-size: 1.3em;
+}
+
+tr {
+    line-height: 10px;
+}
+
+.nav-bening {
+    background: transparent;
+}
+
+.nav-item {
+    font-family: fontnavbar;
+}
+
+.navbar{
+    z-index: 3;
+}
+
+.center-img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 120px;
+    width: 15%
+}
+
+.input {
+    position: relative;
+}
+
+.row {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.col- {
+    display: inline-block;
+}
+
+.aboutbox {
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px 20px;
+    background-color: khaki;
+    width: 70%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.navbar-custom { 
+    background-color: #D2A33A; 
+} 
+
+.hover{
+    color: #F0E68C;
+}
+
+.card-bg{
+    background-color: #F0E68C;
+}
+
+.focus{
+    outline-color: #D2A33A;
+}
+
+.kosan-perlu-verifikasi{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    height: max-content;
+}
+
+.kosan-perlu-verifikasi:hover{
+    border-radius: 5px;
+    background-color: #f7f7f7;
+}
+
+.unconfirmed-pesanan{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    height: max-content;
+}
+
+.unconfirmed-pesanan:hover{
+    border-radius: 5px;
+    background-color: #f7f7f7;
+}
+
+.pesanan{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    height: max-content;
+}
+
+.pesanan:hover{
+    border-radius: 5px;
+    background-color: #f7f7f7;
+}
+
+#moto {
+    /* position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    font-family: fontmoto;
+    font-size: 2.8em;
+}
+
+#txtjarak {
+    border-radius: 5px;
+    box-shadow: -5px 1px 5px hsl(0, 0%, 40%), inset 0px 4px 6px -5px black;
+}
+
+#txtp{
+    border-radius: 5px;
+    box-shadow: -5px 1px 5px hsl(0, 0%, 40%), inset 0px 4px 6px -5px black;
+}
+
+#txtl{
+    border-radius: 5px;
+    box-shadow: -5px 1px 5px hsl(0, 0%, 40%), inset 0px 4px 6px -5px black;
+}
+
+#txtluas {
+    border-radius: 5px;
+    box-shadow: -5px 1px 5px hsl(0, 0%, 40%), inset 0px 4px 6px -5px black;
+}
+
+#fasilitas-container {
+    text-align: left;
+    font-size: small;
+}
+
+#logo {
+    width: 20%;
+    height: 20%;
+}
+
+#aboutlogo {
+    width: 20%;
+    height: 40%;
+}

@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "Dasbor.svelte"
+  ],
+  "sourcesContent": [
+    "<script lang=\"ts\">let sesi;\r\nsesi = localStorage.getItem('admin');\r\nfunction logout() {\r\n    localStorage.clear();\r\n    window.open('http://localhost:5000/admin/login', \"_self\");\r\n}\r\n</script>\r\n\r\n<style>\r\n    .upload{\r\n        margin-top: 100px;\r\n    }\r\n</style>\r\n\r\n<div class=\"upload\">\r\n    <h1 class=\"h1 mb-3\">DASBOR ADMIN</h1>\r\n    <p>{sesi}</p>\r\n    <form action=\"\" method=\"post\" enctype=\"multipart/form-data\">\r\n        <input type=\"file\" accept=\"image/jpeg\" name=\"photo\">\r\n        <input type=\"submit\" value=\"upload\">\r\n    </form>\r\n    <button class=\"btn btn-danger\" on:click={logout}>Logout</button>\r\n</div>"
+  ],
+  "names": [],
+  "mappings": "AASI,qBAAO,CAAC,AACJ,UAAU,CAAE,KAAK,AACrB,CAAC"
+}
