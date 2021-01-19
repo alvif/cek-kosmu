@@ -20,7 +20,7 @@
     konfirmasiPendaftaran(id_kos: number, opsi: string){
       try {
         if(opsi === 'terima'){
-          axios.post('http://localhost:3002/admin/konfirmasi-pendaftaran', {
+          axios.post('https://cek-kosmu-server.herokuapp.com//admin/konfirmasi-pendaftaran', {
             'id_kos': data_kosan[i_list].id_kos,
             'status_kosan': 'verified'
           }, {
@@ -41,7 +41,7 @@
             alert(err);
           });
         }else if(opsi === 'tolak'){
-          axios.post('http://localhost:3002/admin/konfirmasi-pendaftaran', {
+          axios.post('https://cek-kosmu-server.herokuapp.com//admin/konfirmasi-pendaftaran', {
             'id_kos': data_kosan[i_list].id_kos,
             'status_kosan': 'not verified'
           }, {
@@ -73,7 +73,7 @@
   function getKosan() {
     try {
       axios
-        .get("http://localhost:3002/admin/unverified-kosan", {
+        .get("https://cek-kosmu-server.herokuapp.com//admin/unverified-kosan", {
           headers: {
             Authorization: localStorage.getItem("admin"),
             status_kosan: "after register",

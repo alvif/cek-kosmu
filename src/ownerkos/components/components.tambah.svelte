@@ -29,7 +29,7 @@
         }else{
           axios({
           method: 'post',
-          url: 'http://localhost:3002/owners/tambah-kos', 
+          url: 'https://cek-kosmu-server.herokuapp.com//owners/tambah-kos', 
           headers : {
             'authorization' : localStorage.getItem('owner')
           },
@@ -60,7 +60,7 @@
     try {
       axios({
           method: 'post',
-          url: 'http://localhost:3002/owners/tambah-kosan', 
+          url: 'https://cek-kosmu-server.herokuapp.com//owners/tambah-kosan', 
           headers : {
             'Content-Type': 'application/x-www-form-urlencoded',
             'Authorization' : localStorage.getItem('owner').toString()
@@ -85,7 +85,7 @@
           alert(error.message);
         })
 
-        // axios.post('http://localhost:3002/owners/tambah-kosan', {
+        // axios.post('https://cek-kosmu-server.herokuapp.com//owners/tambah-kosan', {
         //   id_pemilik: localStorage.getItem('id_owner'),
         //   nama_kos: data_kosan.nama_kos,
         //   alamat_kos: data_kosan.alamat_kos,
@@ -114,7 +114,7 @@
 
         // let txtpass:string = '';
         // txtpass = encryptPW(signup_obj.password);
-        // const response = axios.post('http://localhost:3002/owners/tambah-kosan', {
+        // const response = axios.post('https://cek-kosmu-server.herokuapp.com//owners/tambah-kosan', {
         //   id_pemilik: localStorage.getItem('id_owner'),
         //   nama_kos: data_kosan.nama_kos,
         //   alamat_kos: data_kosan.alamat_kos,
@@ -135,7 +135,7 @@
         //   alert(err);
         // })
     
-        // fetch('http://localhost:3002/owners/tambah-kosan', {
+        // fetch('https://cek-kosmu-server.herokuapp.com//owners/tambah-kosan', {
         //   method: 'POST', 
         //   headers: {
         //     'Content-type' : 'application/q-www-form-urlencoded', 
@@ -161,7 +161,7 @@
       body
     };
 
-    fetch('http://localhost:3002/owners/tambah-kosan', init)
+    fetch('https://cek-kosmu-server.herokuapp.com//owners/tambah-kosan', init)
     .then((response) => {
       let res = response.statusText;
       alert(res)

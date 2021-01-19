@@ -14,7 +14,7 @@
   let uname: string;
   let pass: string;
   let result;
-  let LOGIN_API_URL = 'http://localhost:3002/owners/login'
+  let LOGIN_API_URL = 'https://cek-kosmu-server.herokuapp.com//owners/login'
 
   export async function doLogin() {
         try {
@@ -48,7 +48,7 @@
   //     owner.username = uname;
   //     owner.password = pass;
   //     owner.lvl = 'admin';
-  //     owner.apiURL = "http://localhost:3002/admin/login"
+  //     owner.apiURL = "https://cek-kosmu-server.herokuapp.com//admin/login"
   //     owner.doLogin(owner.lvl);
   //     login_state = owner.login_state;
   //     res = owner.res.username;

@@ -48,7 +48,7 @@
       data-toggle="modal"
       data-target="#SignInModal">Sign in</button><br><br>
     
-    <!-- <form action="http://localhost:3002/owners/upload/imgkosan" method="POST" enctype="multipart/form-data">
+    <!-- <form action="https://cek-kosmu-server.herokuapp.com//owners/upload/imgkosan" method="POST" enctype="multipart/form-data">
       <input type="file" accept="image/*" name="file" id="file">
       <button type="submit">UP</button>
     </form> -->

@@ -34,7 +34,7 @@
           body
         };
 
-        fetch('http://localhost:3002/owners/confirm-pesanan', init)
+        fetch('https://cek-kosmu-server.herokuapp.com//owners/confirm-pesanan', init)
         .then((response) => {
           if(response.status == 200){
             alert('Berhasil konfirmasi ketersediaan kamar!');
@@ -51,7 +51,7 @@
     getUnconfirmedPesanan() {
       try {
         axios
-          .get("http://localhost:3002/owners/unconfirmed-pesanan", {
+          .get("https://cek-kosmu-server.herokuapp.com//owners/unconfirmed-pesanan", {
             headers: {
               Authorization: localStorage.getItem("owner"),
               status_pesanan: "unconfirmed",

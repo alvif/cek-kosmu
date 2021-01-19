@@ -35,7 +35,7 @@
       try {
         axios({
           method: 'post',
-          url: 'http://localhost:3002/owners/signup',
+          url: 'https://cek-kosmu-server.herokuapp.com//owners/signup',
           data: {
             nama: data_owner.nama_owner,
             alamat: data_owner.alamat_owner,

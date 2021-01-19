@@ -11,7 +11,7 @@
 
   async function login() {
     try {
-      const response = await axios.post("http://localhost:3002/users/login", {
+      const response = await axios.post("https://cek-kosmu-server.herokuapp.com//users/login", {
         username: uname,
         password: pass,
       });
@@ -32,7 +32,7 @@
 
   async function login1() {
     try {
-      fetch('http://localhost:3002/users/login', {
+      fetch('https://cek-kosmu-server.herokuapp.com//users/login', {
         method: "POST",
         headers: {"Content-type": "application/x-www-form-urlencoded; charset=UTF-8"},
         body: JSON.stringify({

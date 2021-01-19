@@ -17,7 +17,7 @@
 
     konfirmasiPemesanan(id_pemesanan: number) {
       try {
-        axios.post('http://localhost:3002/admin/konfirmasi-pemesanan', {}, {
+        axios.post('https://cek-kosmu-server.herokuapp.com//admin/konfirmasi-pemesanan', {}, {
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded', 
             'Authorization': localStorage.getItem('admin'),
@@ -42,7 +42,7 @@
     getUnconfirmedPesanan() {
       try {
         axios
-          .get("http://localhost:3002/admin/unconfirmed-pesanan", {
+          .get("https://cek-kosmu-server.herokuapp.com//admin/unconfirmed-pesanan", {
             headers: {
               Authorization: localStorage.getItem("admin"),
               status_pesanan: "unconfirmed",

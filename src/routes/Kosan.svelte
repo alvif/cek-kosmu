@@ -13,7 +13,7 @@
     total_biaya: 0,
   };
 
-  const apiURL = "http://localhost:3002/listkosan";
+  const apiURL = "https://cek-kosmu-server.herokuapp.com//listkosan";
 
   onMount(async () => {
     const res = await fetch(apiURL)
@@ -89,7 +89,7 @@
             alr.show();
           }else{
               // post data (method, header, dan request body ke server api)
-              fetch("http://localhost:3002/users/buatpesanan", {
+              fetch("https://cek-kosmu-server.herokuapp.com//users/buatpesanan", {
               method: "POST",
               headers: {
                 "Content-Type": "application/x-www-form-urlencoded",
@@ -163,7 +163,7 @@
           <div class="row no-gutters">
             <div class="col-md-4">
               <img
-                src="http://localhost:3002/upload/kosan/image-1608049910729.png"
+                src="https://cek-kosmu-server.herokuapp.com//upload/kosan/image-1608049910729.png"
                 class="card-img"
                 alt="..." />
             </div>
@@ -206,7 +206,7 @@
         <div class="row">
           <div class="col-3 p-2">
             <img
-              src="http://localhost:3002/upload/kosan/image-1608049910729.png"
+              src="https://cek-kosmu-server.herokuapp.com//upload/kosan/image-1608049910729.png"
               class="border"
               width="125"
               height="125"
