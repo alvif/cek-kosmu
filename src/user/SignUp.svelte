@@ -49,7 +49,7 @@
     try {
       let txtpass:string = '';
       // txtpass = encryptPW(signup_obj.password);
-      const response = await axios.post('https://cek-kosmu-server.herokuapp.com//users/signup', {
+      const response = await axios.post('https://cek-kosmu-server.herokuapp.com/users/signup', {
         nama: signup_obj.nama,
         alamat: signup_obj.alamat,
         telpon: signup_obj.telpon,

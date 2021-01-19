@@ -13,7 +13,7 @@
     let uname: string;
     let pass: string;
     let login_state:number = 0; 
-    let LOGIN_API_URL = "https://cek-kosmu-server.herokuapp.com//admin/login"
+    let LOGIN_API_URL = "https://cek-kosmu-server.herokuapp.com/admin/login"
 
     class NotifAlert extends myAlert{
       private role: string;

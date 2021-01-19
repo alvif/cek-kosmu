@@ -64,7 +64,7 @@
 
         getPesanan(){
             try {
-                axios.get('https://cek-kosmu-server.herokuapp.com//users/pesanan',{
+                axios.get('https://cek-kosmu-server.herokuapp.com/users/pesanan',{
                     headers : {
                         Authorization: localStorage.getItem('user'),
                         id_user: this.id_user
@@ -81,7 +81,7 @@
 
         getTransaksi(){
             try {
-                axios.get('https://cek-kosmu-server.herokuapp.com//users/transaksi',{
+                axios.get('https://cek-kosmu-server.herokuapp.com/users/transaksi',{
                     headers : {
                         Authorization: localStorage.getItem('user'),
                         id_user: this.id_user
@@ -110,7 +110,7 @@
                     body
                 };
 
-                fetch('https://cek-kosmu-server.herokuapp.com//users/tambah-transaksi', init)
+                fetch('https://cek-kosmu-server.herokuapp.com/users/tambah-transaksi', init)
                 .then((response) => {
                     console.log(response.json());
                     alert('Berhasil! Silahkan lanjut ke pembayaran!');
@@ -130,7 +130,7 @@
                     alert('Mohon pilih transaksi!');
                     return;
                 }
-                axios.post('https://cek-kosmu-server.herokuapp.com//users/selesaikan-transaksi',{
+                axios.post('https://cek-kosmu-server.herokuapp.com/users/selesaikan-transaksi',{
                     status_pembayaran: 'selesai(user)',
                 }, {
                     headers: {

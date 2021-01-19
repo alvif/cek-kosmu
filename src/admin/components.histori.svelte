@@ -13,7 +13,7 @@
 
     getUnconfirmedPembayaran(){
       try {
-        axios.get('https://cek-kosmu-server.herokuapp.com//admin/unconfirmed-transaksi', {
+        axios.get('https://cek-kosmu-server.herokuapp.com/admin/unconfirmed-transaksi', {
           headers: {
             'Authorization' : localStorage.getItem('admin')
           }
@@ -74,7 +74,7 @@
           alert('Mohon Pilih Pembayaran!');
           return;
         }
-        axios.post('https://cek-kosmu-server.herokuapp.com//admin/konfirmasi-transaksi',{},{
+        axios.post('https://cek-kosmu-server.herokuapp.com/admin/konfirmasi-transaksi',{},{
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded', 
             'Authorization': localStorage.getItem('admin'),

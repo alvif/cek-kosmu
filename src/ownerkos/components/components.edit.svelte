@@ -20,7 +20,7 @@
   function getKosan() {
     try {
       axios
-        .get("https://cek-kosmu-server.herokuapp.com//owners/listkosan", {
+        .get("https://cek-kosmu-server.herokuapp.com/owners/listkosan", {
           headers: {
             Authorization: localStorage.getItem("owner"),
             owner_id: localStorage.getItem("id_owner"),
